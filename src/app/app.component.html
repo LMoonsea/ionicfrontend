@@ -22,10 +22,11 @@
             <ion-item routerDirection="root" [routerLink]="[appUser.url]" lines="none" detail="false"
               routerLinkActive="selected">
 
-              <ion-icon *ngIf="!appUser.logged" aria-hidden="true" slot="start" [ios]="appUser.icon + '-outline'" [md]="appUser.icon + '-sharp'"></ion-icon>
+              <ion-icon *ngIf="!appUser.logged" aria-hidden="true" slot="start" [ios]="appUser.icon + '-outline'"
+                [md]="appUser.icon + '-sharp'"></ion-icon>
 
               <ion-avatar slot="start" *ngIf="appUser.logged">
-                <img [alt]="appUser.title" [src]="appUser.avatar" referrerpolicy="no-referrer"/>
+                <img [alt]="appUser.title" [src]="appUser.avatar" referrerpolicy="no-referrer" />
               </ion-avatar>
 
               <ion-label>{{ appUser.title }}</ion-label>
